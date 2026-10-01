@@ -110,8 +110,10 @@ header{
 }
 
 header img{
-    width: 199px;
-    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 nav ul{
