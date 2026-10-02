@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Abanoub">
+    <title>Abanoub | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="iamge/Logo.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">Abanoub</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <!-- Dark/Light Theme Button -->
+            <button id="theme-toggle" class="btn-icon" title="Toggle Theme">🌙</button>
+            <!-- User Auth Area -->
+            <div id="user-area">
+                <button id="open-auth-btn" class="btn-primary">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home">
+        <section class="hero">
+            <h1>Hello, I'm <span class="highlight">Abanoub</span></h1>
+            <p>Full-Stack Developer Learner | Passionate about building modern web experiences, aviation, and video games.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+                <a href="#services" class="btn-secondary">My Services</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>My Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites using clean HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces with dark/light themes and intuitive layouts.</p>
+            </div>
+            <div class="service-card">
+                <h3>Problem Solving</h3>
+                <p>Writing scalable code and finding efficient solutions for digital tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="contact-name" placeholder="Your Name" required>
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+            <textarea id="contact-message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abanoub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Auth Modal (Login / Register Popup) -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal-btn" class="close-btn">&times;</span>
+            <div class="auth-tabs">
+                <button id="tab-login" class="tab-btn active">Login</button>
+                <button id="tab-register" class="tab-btn">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+                <h3>Welcome Back</h3>
+                <input type="email" id="login-email" placeholder="Email Address" required>
+                <input type="password" id="login-pass" placeholder="Password" required>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register-form" class="auth-form">
+                <h3>Create Account</h3>
+                <input type="text" id="reg-name" placeholder="Full Name" required>
+                <input type="email" id="reg-email" placeholder="Email Address" required>
+                <input type="password" id="reg-pass" placeholder="Password" required>
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
